@@ -1,13 +1,12 @@
-from iexfinance.stocks import Stock
 from iexfinance.stocks import get_historical_data
 import datetime
-import pandas
+import pandas as pd
 
 start = datetime.date(2020, 1, 1)
 end = datetime.date(2020, 3, 1)
 api_key = "pk_1d130ebd9d1943458f3443d55bc44c27"
 
-df = pandas.DataFrame(get_historical_data('AAPL', start, end, token = api_key, close_only=True, output_format='pandas'))
+df = pd.DataFrame(get_historical_data('AAPL', start, end, token = api_key, close_only=True, output_format='pandas'))
 
 # print(df)
 
