@@ -1,12 +1,12 @@
 import pymssql
-conn = pymssql.connect(server='pmp-esmt.database.windows.net',
-                       user='quants',
-                       password='Portfolio1!',
-                       database='pmptest')
+conn = pymssql.connect(server='SERVERNAME.database.windows.net',
+                       user='USER',
+                       password='PASSWORD',
+                       database='DATABASE')
 
 cursor = conn.cursor()
 
-cursor.execute('SELECT * FROM dbo.IEX_CLOUD_API_Test')
+cursor.execute('SELECT * FROM dbo.TABLE')
 
 print(cursor.fetchall())
 
