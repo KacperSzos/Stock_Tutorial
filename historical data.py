@@ -11,5 +11,5 @@ df = pandas.DataFrame(get_historical_data('AAPL', start, end, token = api_key, c
 
 # print(df)
 
-df.to_csv(r'/Users/kszostakow/desktop/test2.csv', index=True)
+df.to_csv(r'/Users/.../aapl_his_dta.csv', index=True)
 
